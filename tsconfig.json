@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        // Donde se guardaran los archivos a compilar en formato js
+        "outDir": "./dist",
+        // Donde estaran los archivos originales en formato ts
+        "rootDir": "./src",
+        // Informamos la version de JS que se va a compilar
+        "lib": ["ESNext"],
+        // Version que vamos compilar
+        "target": "ESNext",
+        // Version que vamos utilizar para los modulos de TS
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext",
+        // Informamos que se va a compilar en modo strict
+        "strict": false,
+        // Depuramos y creamos un sourceMap de nuestros arhivos para hacer mas eficiente el procesamiento del codigo
+        "sourceMap": true,
+        // Verificamos que las importaciones de TS sean compatibles con las de JS
+        "esModuleInterop": true,
+        // Creamos archivos .d.ts que tiparan codigo no tipado de TS o JS
+        "declaration": true,
+        // Habilitamos las caractisticas adicionales de lenguaje o decoradores
+        "experimentalDecorators": true,
+        // Habilitamos los metadatos para los decoradores
+        "emitDecoratorMetadata": true
+    },
+    // Archivos que se van a incluir en la compilacion
+    "include": ["src/**/*.ts"],
+    // Archivos que no se van incluir en la compilacion
+    "exclude": ["src/**/*.test.ts"]
+}
